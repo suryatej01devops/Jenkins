@@ -18,7 +18,7 @@ pipeline {
                 script{
                     echo "${NAME}"
                     echo "i am the script to help more"
-                    sleep 10
+                    sleep 10 #sleep for 10 sec
                 }
                 echo 'Building...'
                 // sh 'mvn clean package'  or  sh 'npm install'
@@ -53,6 +53,5 @@ pipeline {
         }
 
     }
-
     
 }
