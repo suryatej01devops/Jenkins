@@ -13,7 +13,7 @@ pipeline {
         disableConcurrentBuilds()
     }
     parameters {
-        string(name: 'Surya teja', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
+        string(name: 'Surya teja chatla', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
 
         text(name: 'Devops engineer ', defaultValue: '', description: 'Enter some information about the person')
 
