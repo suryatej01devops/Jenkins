@@ -9,7 +9,7 @@ pipeline {
         NAME = "surya"
     }
     options {
-        timeout(time: "10" , unit: "seconds")
+        timeout(time: 10, unit: 'SECONDS')
     }
     stages {
 
@@ -18,6 +18,7 @@ pipeline {
                 script{
                     echo "${NAME}"
                     echo "i am the script to hello"
+                    sleep 5
                 }
                 echo 'Building...'
                 // sh 'mvn clean package'  or  sh 'npm install'
