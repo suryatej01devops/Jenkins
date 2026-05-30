@@ -8,6 +8,9 @@ pipeline {
 
         stage('Build') {
             steps {
+                script{
+                    echo "i am the script to help more"
+                }
                 echo 'Building...'
                 // sh 'mvn clean package'  or  sh 'npm install'
             }
