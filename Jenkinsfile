@@ -17,8 +17,7 @@ pipeline {
             steps {
                 script{
                     echo "${NAME}"
-                    echo "i am the script to help more"
-                    sleep 10 #sleep for 10 sec
+                    echo "i am the script to hello"
                 }
                 echo 'Building...'
                 // sh 'mvn clean package'  or  sh 'npm install'
