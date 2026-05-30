@@ -30,10 +30,19 @@ pipeline {
                 script{
                     echo "${NAME}"
                     echo "i am the script to hello"
-                    sleep 5
+                    sleep 10
                 }
                 echo 'Building...'
                 // sh 'mvn clean package'  or  sh 'npm install'
+                echo "Hello ${params.PERSON}"
+
+                echo "Biography: ${params.BIOGRAPHY}"
+
+                echo "Toggle: ${params.TOGGLE}"
+
+                echo "Choice: ${params.CHOICE}"
+
+                echo "Password: ${params.PASSWORD}"
                 
             }
         }
