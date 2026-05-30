@@ -8,6 +8,9 @@ pipeline {
     environment{
         NAME = "surya"
     }
+    options {
+        timeout(time: 10 , unit: "seconds")
+    }
     stages {
 
         stage('Build') {
@@ -15,9 +18,11 @@ pipeline {
                 script{
                     echo "${NAME}"
                     echo "i am the script to help more"
+                    sleep 10
                 }
                 echo 'Building...'
                 // sh 'mvn clean package'  or  sh 'npm install'
+                
             }
         }
 
