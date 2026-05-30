@@ -75,4 +75,3 @@ pipeline {
     }
     
 }
-#webhook configured
