@@ -4,11 +4,16 @@ pipeline {
             label 'Agent-1'
         }
     }          // where to run the pipeline (any agent/node)
+
+    environment{
+        name = "surya"
+    }
     stages {
 
         stage('Build') {
             steps {
                 script{
+                    echo $name
                     echo "i am the script to help more"
                 }
                 echo 'Building...'
