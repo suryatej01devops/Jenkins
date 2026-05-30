@@ -13,7 +13,7 @@ pipeline {
         stage('Build') {
             steps {
                 script{
-                    echo "${NAME}"
+                    echo ${NAME}
                     echo "i am the script to help more"
                 }
                 echo 'Building...'
