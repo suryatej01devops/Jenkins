@@ -30,7 +30,6 @@ pipeline {
                 script{
                     echo "${NAME}"
                     echo "i am the script to hello"
-                    sleep 10
                 }
                 echo 'Building...'
                 // sh 'mvn clean package'  or  sh 'npm install'
@@ -76,3 +75,4 @@ pipeline {
     }
     
 }
+#webhook configured
